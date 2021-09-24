@@ -2225,7 +2225,7 @@ TabOrder
 3
 15
 
-61
+60
 D_rec
 3
 1
@@ -2966,21 +2966,6 @@ Tower and Receiver
 1
 1
 Default
-receiver_type
-3
-1
-Receiver type
- 
-Tower and Receiver
-33
-External receiver|Cavity receiver
-9
-1
-1
-1
-1
-0
-Default
 riser_tm_mult
 3
 1
@@ -3098,7 +3083,7 @@ Tower and Receiver
 0
 Default
 
-2954
+2876
 equations{ 'rec_htf' } = define() {
 	return ?${csp.pt.rec.htf_type}
 	[
@@ -3188,11 +3173,6 @@ equations{ 'user_fluid' } = define() {
 
 equations{ 'tower_technology' } = define() {
 	return 0;	//MSPT
-};
-
-equations{ 'receiver_type' } = define()
-{
-	return 0;	// external receiver
 };
 
 equations{ 'REC_COPY_solarm' } = define() {
