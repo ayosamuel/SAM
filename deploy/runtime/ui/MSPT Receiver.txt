@@ -2225,7 +2225,7 @@ TabOrder
 3
 15
 
-60
+57
 D_rec
 3
 1
@@ -2323,48 +2323,6 @@ Tower and Receiver
 1
 1
 0
-Default
-csp.pt.rec.cav_ap_height
-3
-1
-Aperture height
- 
-Tower and Receiver
-0
-8
-1
-1
-1
-1
-0
-Default
-csp.pt.rec.cav_ap_hw_ratio
-3
-1
-Aperture height to width ratio
- 
-Tower and Receiver
-0
-2
-1
-1
-1
-1
-1.2
-Default
-csp.pt.rec.cav_lip_height_ratio
-3
-1
-Lip to height ratio
-m
-Tower and Receiver
-0
-2
-1
-1
-1
-1
-0.1
 Default
 csp.pt.rec.flow_pattern
 3
@@ -3083,7 +3041,7 @@ Tower and Receiver
 0
 Default
 
-2876
+2708
 equations{ 'rec_htf' } = define() {
 	return ?${csp.pt.rec.htf_type}
 	[
@@ -3125,7 +3083,6 @@ equations{ '$MIMO$ MSPT_Receiver_Equations' } = define() {
 	
 	// csp.pt.rec.cav_ap_height
 	data.rec_d_spec = ${rec_d_spec};
-	data.csp_pt_rec_cav_ap_hw_ratio = ${csp.pt.rec.cav_ap_hw_ratio};
 	
 	// rec_aspect
 	data.d_rec = ${D_rec};
@@ -3146,7 +3103,6 @@ equations{ '$MIMO$ MSPT_Receiver_Equations' } = define() {
 		//${csp.pt.rec.cav_panel_height} = -999.;   // not in Variables
 		${csp.pt.rec.max_flow_to_rec} = -999.;
 		${csp.pt.rec.htf_t_avg} = -999.;
-		${csp.pt.rec.cav_ap_height} = -999.;
 		${csp.pt.rec.htf_c_avg} = -999.;
 		${rec_aspect} = -999.;
 		${piping_length} = -999.;
@@ -3157,7 +3113,6 @@ equations{ '$MIMO$ MSPT_Receiver_Equations' } = define() {
 		//${csp.pt.rec.cav_panel_height} = data.csp_pt_rec_cav_panel_height;
 		${csp.pt.rec.max_flow_to_rec} = data.csp_pt_rec_max_flow_to_rec;
 		${csp.pt.rec.htf_t_avg} = data.csp_pt_rec_htf_t_avg;
-		${csp.pt.rec.cav_ap_height} = data.csp_pt_rec_cav_ap_height;
 		${csp.pt.rec.htf_c_avg} = data.csp_pt_rec_htf_c_avg;
 		${rec_aspect} = data.rec_aspect;
 		${piping_length} = data.piping_length;
