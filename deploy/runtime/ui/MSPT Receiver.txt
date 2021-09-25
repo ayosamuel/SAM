@@ -2225,7 +2225,7 @@ TabOrder
 3
 15
 
-56
+58
 D_rec
 3
 1
@@ -2323,6 +2323,20 @@ Tower and Receiver
 1
 1
 0
+Default
+cav_rec_area
+3
+1
+ 
+m2
+ 
+0
+8
+1
+1
+1
+1
+-987
 Default
 csp.pt.rec.flow_pattern
 3
@@ -2495,6 +2509,20 @@ Tower and Receiver
 1
 1
 0.85
+Default
+ext_rec_area
+3
+1
+ 
+m2
+ 
+0
+8
+1
+1
+1
+1
+-987
 Default
 f_rec_min
 3
@@ -3027,7 +3055,7 @@ Tower and Receiver
 0
 Default
 
-2643
+2908
 equations{ 'rec_htf' } = define() {
 	return ?${csp.pt.rec.htf_type}
 	[
@@ -3071,6 +3099,11 @@ equations{ '$MIMO$ MSPT_Receiver_Equations' } = define() {
 	data.d_rec = ${D_rec};
 	data.rec_height = ${rec_height};
 	
+	// cavity
+	data.cav_rec_height = ${cav_rec_height};
+	data.cav_rec_width = ${cav_rec_width};
+	data.cav_rec_span = ${cav_rec_span};
+	
 	// piping_length
 	data.h_tower = ${h_tower};
 	data.piping_length_mult = ${piping_length_mult};
@@ -3090,6 +3123,8 @@ equations{ '$MIMO$ MSPT_Receiver_Equations' } = define() {
 		${rec_aspect} = -999.;
 		${piping_length} = -999.;
 		${piping_loss_tot} = -999.;
+		${ext_rec_area} = -999.;
+		${cav_rec_area} = -999.;
 	}
 	else {
 		//${csp.pt.rec.cav_lip_height} = data.csp_pt_rec_cav_lip_height;
@@ -3100,6 +3135,8 @@ equations{ '$MIMO$ MSPT_Receiver_Equations' } = define() {
 		${rec_aspect} = data.rec_aspect;
 		${piping_length} = data.piping_length;
 		${piping_loss_tot} = data.piping_loss_tot;
+		${ext_rec_area} = data.ext_rec_area;
+		${cav_rec_area} = data.cav_rec_area;
 	}
 
 	return 0;

@@ -4803,7 +4803,7 @@ Tower SolarPilot Capital Costs
 0
 Default
 
-6456
+6458
 // ui only
 equations{ 'csp.pt.cost.heliostats_m2' } = define() {
 	area = ${A_sf_UI};
@@ -4838,8 +4838,8 @@ equations{ 'csp.pt.cost.receiver.area' } = define(){
 	if(tech == 'MSPT' || tech == 'ISCC'){
 		area = ?${receiver_type}
 		[
-		${rec_height}*${D_rec}*3.1415926,  //external
-		-999.9
+		${ext_rec_area},  //external
+		${cav_rec_area}		//cavity
 		];
 	}
 	else if (tech == 'DSPT'){
