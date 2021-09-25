@@ -4817,7 +4817,7 @@ Tower SolarPilot Capital Costs
 0
 Default
 
-6312
+6242
 // ui only
 equations{ 'csp.pt.cost.heliostats_m2' } = define() {
 	area = ${A_sf_UI};
@@ -4957,7 +4957,6 @@ equations{ '$MIMO$ Tower_SolarPilot_Capital_Costs_Equations' } = define() {
 		data.h_tower = ${h_tower};		// set different for other techs
 		data.d_rec = ${D_rec};			// set different for other techs
 		data.receiver_type = ${receiver_type};
-		data.rec_d_spec = ${rec_d_spec};
 		data.p_ref = ${P_ref};
 		data.design_eff = ${design_eff};
 		data.tshours = ${tshours};
@@ -4975,7 +4974,6 @@ equations{ '$MIMO$ Tower_SolarPilot_Capital_Costs_Equations' } = define() {
 		data.h_tower = ${THT};			// set different for other techs
 		data.d_rec = ${D_rec};			// set different for other techs
 		data.receiver_type = ${receiver_type};
-		data.rec_d_spec = ${rec_d_spec};
 
 		success = ssc_eqn("Tower_SolarPilot_Capital_Costs_ISCC_Equations", data);
 	}
