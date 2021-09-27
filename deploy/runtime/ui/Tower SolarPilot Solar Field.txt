@@ -3713,7 +3713,7 @@ equations{ '$MIMO$ Tower_SolarPilot_Solar_Field_Equations' } = define() {
 	return 0;
 };
 
-9114
+9150
 function update_button_status() {
 	/* 
 	This function updates the enable/disable status of the layout and 
@@ -3790,6 +3790,7 @@ function call_solarpilot(is_optimize) {
 	logmsg('btn_solarpilot');
 	obj = ssc_create();
 	ssc_var(obj, "solar_resource_file",${solar_resource_file});
+	ssc_var(obj, "receiver_type", ${receiver_type});
 	ssc_var(obj, "helio_width",${helio_width});
 	ssc_var(obj, "helio_height",${helio_height});
 	ssc_var(obj, "helio_optical_error",${helio_optical_error_mrad}*1.E-3);
@@ -3840,7 +3841,7 @@ function call_solarpilot(is_optimize) {
 	ssc_var(obj, "opt_conv_tol", ${opt_conv_tol});
 	ssc_var(obj, "opt_algorithm", 1); //always cobyla now... //${opt_algorithm});
 		
-	//ssc_dump( obj, homedir() + '/solarpilot.txt' );
+	//ssc_dump( obj, 'solarpilot.lk' );
 	//msgbox("Dumping inputs to: " + homedir() + '/solarpilot.txt');
 	
 	//save prior values as reference in case we're optimizing
