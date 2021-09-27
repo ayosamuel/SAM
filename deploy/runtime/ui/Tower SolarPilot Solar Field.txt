@@ -3713,7 +3713,7 @@ equations{ '$MIMO$ Tower_SolarPilot_Solar_Field_Equations' } = define() {
 	return 0;
 };
 
-9150
+9302
 function update_button_status() {
 	/* 
 	This function updates the enable/disable status of the layout and 
@@ -3791,6 +3791,12 @@ function call_solarpilot(is_optimize) {
 	obj = ssc_create();
 	ssc_var(obj, "solar_resource_file",${solar_resource_file});
 	ssc_var(obj, "receiver_type", ${receiver_type});
+	ssc_var(obj, "rec_height",${rec_height});
+	ssc_var(obj, "rec_aspect",${rec_aspect});
+	ssc_var(obj, "cav_rec_height", ${cav_rec_height});
+	ssc_var(obj, "cav_rec_width", ${cav_rec_width});
+	ssc_var(obj, "cav_rec_span", ${cav_rec_span});
+	
 	ssc_var(obj, "helio_width",${helio_width});
 	ssc_var(obj, "helio_height",${helio_height});
 	ssc_var(obj, "helio_optical_error",${helio_optical_error_mrad}*1.E-3);
@@ -3798,8 +3804,6 @@ function call_solarpilot(is_optimize) {
 	ssc_var(obj, "dens_mirror",${dens_mirror});
 	ssc_var(obj, "helio_reflectance",${helio_reflectance});
 	ssc_var(obj, "rec_absorptance",${rec_absorptance});
-	ssc_var(obj, "rec_height",${rec_height});
-	ssc_var(obj, "rec_aspect",${rec_aspect});
 	ssc_var(obj, "rec_hl_perm2",${rec_hl_perm2});
 	ssc_var(obj, "q_design",${Q_rec_des});
 	ssc_var(obj, "dni_des", ${dni_des});
