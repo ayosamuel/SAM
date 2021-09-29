@@ -1,6 +1,6 @@
 MSPT Receiver
-884
-632
+883
+557
 37
 GroupBox
 
@@ -15,13 +15,13 @@ X
 6
 Y
 3
-123
+129
 Width
 3
 422
 Height
 3
-182
+98
 Tool Tip
 5
 0
@@ -45,7 +45,7 @@ X
 6
 Y
 3
-309
+231
 Width
 3
 422
@@ -81,7 +81,7 @@ Width
 438
 Height
 3
-317
+122
 Tool Tip
 5
 0
@@ -105,7 +105,7 @@ X
 6
 Y
 3
-459
+381
 Width
 3
 422
@@ -135,7 +135,7 @@ X
 438
 Y
 3
-483
+291
 Width
 3
 438
@@ -165,7 +165,7 @@ X
 12
 Y
 3
-141
+147
 Width
 3
 408
@@ -531,7 +531,7 @@ X
 258
 Y
 3
-597
+519
 Width
 3
 100
@@ -593,7 +593,7 @@ X
 258
 Y
 3
-501
+423
 Width
 3
 100
@@ -655,7 +655,7 @@ X
 258
 Y
 3
-330
+252
 Width
 3
 100
@@ -717,7 +717,7 @@ X
 714
 Y
 3
-450
+258
 Width
 3
 100
@@ -779,7 +779,7 @@ X
 258
 Y
 3
-378
+300
 Width
 3
 100
@@ -841,7 +841,7 @@ X
 258
 Y
 3
-573
+495
 Width
 3
 100
@@ -903,7 +903,7 @@ X
 258
 Y
 3
-477
+399
 Width
 3
 100
@@ -991,7 +991,7 @@ X
 714
 Y
 3
-354
+162
 Width
 3
 100
@@ -1053,7 +1053,7 @@ X
 438
 Y
 3
-330
+138
 Width
 3
 438
@@ -1083,7 +1083,7 @@ X
 258
 Y
 3
-204
+195
 Width
 3
 100
@@ -1145,7 +1145,7 @@ X
 258
 Y
 3
-426
+348
 Width
 3
 100
@@ -1207,7 +1207,7 @@ X
 714
 Y
 3
-426
+234
 Width
 3
 100
@@ -1269,7 +1269,7 @@ X
 714
 Y
 3
-402
+210
 Width
 3
 100
@@ -1361,7 +1361,7 @@ X
 714
 Y
 3
-573
+381
 Width
 3
 100
@@ -1423,7 +1423,7 @@ X
 714
 Y
 3
-525
+333
 Width
 3
 100
@@ -1485,7 +1485,7 @@ X
 714
 Y
 3
-549
+357
 Width
 3
 100
@@ -1547,7 +1547,7 @@ X
 714
 Y
 3
-501
+309
 Width
 3
 100
@@ -1609,7 +1609,7 @@ X
 714
 Y
 3
-597
+405
 Width
 3
 100
@@ -1671,7 +1671,7 @@ X
 258
 Y
 3
-402
+324
 Width
 3
 100
@@ -1733,7 +1733,7 @@ X
 714
 Y
 3
-378
+186
 Width
 3
 100
@@ -1795,7 +1795,7 @@ X
 258
 Y
 3
-549
+471
 Width
 3
 100
@@ -1857,7 +1857,7 @@ X
 258
 Y
 3
-525
+447
 Width
 3
 100
@@ -1919,7 +1919,7 @@ X
 258
 Y
 3
-354
+276
 Width
 3
 100
@@ -1969,7 +1969,7 @@ TabOrder
 3
 15
 
-54
+57
 Flow_type
 3
 1
@@ -2039,6 +2039,48 @@ Tower and Receiver
 1
 1
 0
+Default
+cav_offset
+3
+1
+ 
+m
+ 
+0
+8
+1
+1
+1
+1
+-987
+Default
+cav_panel_width
+3
+1
+ 
+m
+ 
+0
+8
+1
+1
+1
+1
+-987
+Default
+cav_radius
+3
+1
+ 
+m
+ 
+0
+8
+1
+1
+1
+1
+-987
 Default
 cav_rec_area
 3
@@ -2742,7 +2784,7 @@ Tower and Receiver
 0
 Default
 
-2908
+3103
 equations{ 'rec_htf' } = define() {
 	return ?${csp.pt.rec.htf_type}
 	[
@@ -2812,6 +2854,9 @@ equations{ '$MIMO$ MSPT_Receiver_Equations' } = define() {
 		${piping_loss_tot} = -999.;
 		${ext_rec_area} = -999.;
 		${cav_rec_area} = -999.;
+		${cav_panel_width} = -999.;
+		${cav_radius} = -999.;
+		${cav_offset} = -999.;
 	}
 	else {
 		//${csp.pt.rec.cav_lip_height} = data.csp_pt_rec_cav_lip_height;
@@ -2824,6 +2869,9 @@ equations{ '$MIMO$ MSPT_Receiver_Equations' } = define() {
 		${piping_loss_tot} = data.piping_loss_tot;
 		${ext_rec_area} = data.ext_rec_area;
 		${cav_rec_area} = data.cav_rec_area;
+		${cav_panel_width} = data.cav_panel_width;
+		${cav_radius} = data.cav_radius;
+		${cav_offset} = data.cav_offset;
 	}
 
 	return 0;
