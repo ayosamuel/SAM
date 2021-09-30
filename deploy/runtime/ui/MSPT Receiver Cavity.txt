@@ -1,7 +1,7 @@
 MSPT Receiver Cavity
-984
-258
-9
+922
+193
+10
 Numeric
 
 1
@@ -498,6 +498,35 @@ BackColour
 TabOrder
 3
 1
+Image
+
+1
+8
+Name
+5
+9
+object 12
+X
+3
+609
+Y
+3
+24
+Width
+3
+210
+Height
+3
+118
+Tool Tip
+5
+0
+Image
+7
+MSPT Receiver Cavity_object 12.png
+Centered
+2
+1
 GroupBox
 
 1
@@ -514,10 +543,10 @@ Y
 3
 Width
 3
-954
+834
 Height
 3
-237
+174
 Tool Tip
 5
 0
