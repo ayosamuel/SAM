@@ -1,7 +1,7 @@
 MSPT Receiver External
-766
-304
-5
+724
+267
+6
 Numeric
 
 1
@@ -12,10 +12,10 @@ Name
 D_rec
 X
 3
-177
+183
 Y
 3
-66
+54
 Width
 3
 100
@@ -74,10 +74,10 @@ Name
 N_panels
 X
 3
-177
+183
 Y
 3
-93
+81
 Width
 3
 100
@@ -136,10 +136,10 @@ Name
 csp.pt.rec.flow_pattern
 X
 3
-453
+462
 Y
 3
-39
+30
 Width
 3
 100
@@ -166,6 +166,36 @@ Selection
 TabOrder
 3
 4294967295
+GroupBox
+
+1
+8
+Name
+5
+8
+object 4
+X
+3
+6
+Y
+3
+3
+Width
+3
+693
+Height
+3
+243
+Tool Tip
+5
+0
+Caption
+5
+17
+External Receiver
+Bold
+2
+1
 Image
 
 1
@@ -176,10 +206,10 @@ Name
 pctFlow
 X
 3
-423
+354
 Y
 3
-90
+63
 Width
 3
 280
@@ -205,10 +235,10 @@ Name
 rec_height
 X
 3
-177
+183
 Y
 3
-39
+27
 Width
 3
 100
