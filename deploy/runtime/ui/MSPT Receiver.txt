@@ -2784,7 +2784,7 @@ Tower and Receiver
 0
 Default
 
-3103
+3149
 equations{ 'rec_htf' } = define() {
 	return ?${csp.pt.rec.htf_type}
 	[
@@ -2831,6 +2831,7 @@ equations{ '$MIMO$ MSPT_Receiver_Equations' } = define() {
 	// cavity
 	data.cav_rec_height = ${cav_rec_height};
 	data.cav_rec_width = ${cav_rec_width};
+	data.n_cav_rec_panels = ${n_cav_rec_panels};
 	data.cav_rec_span = ${cav_rec_span};
 	
 	// piping_length

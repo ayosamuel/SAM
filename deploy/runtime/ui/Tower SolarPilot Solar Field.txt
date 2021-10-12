@@ -3713,7 +3713,7 @@ equations{ '$MIMO$ Tower_SolarPilot_Solar_Field_Equations' } = define() {
 	return 0;
 };
 
-10720
+10776
 function update_button_status() {
 	/* 
 	This function updates the enable/disable status of the layout and 
@@ -3798,6 +3798,7 @@ function call_solarpilot(is_optimize) {
 	ssc_var(obj, "cav_rec_height", ${cav_rec_height});
 	ssc_var(obj, "cav_rec_width", ${cav_rec_width});
 	ssc_var(obj, "cav_rec_span", ${cav_rec_span});
+	ssc_var(obj, "n_cav_rec_panels", ${n_cav_rec_panels});
 	
 	ssc_var(obj, "helio_width",${helio_width});
 	ssc_var(obj, "helio_height",${helio_height});
