@@ -1,6 +1,6 @@
 MSPT Receiver
-883
-557
+885
+498
 37
 GroupBox
 
@@ -12,16 +12,16 @@ Name
 GroupBox1
 X
 3
-6
+438
 Y
 3
-129
+399
 Width
 3
-422
+437
 Height
 3
-98
+89
 Tool Tip
 5
 0
@@ -45,20 +45,20 @@ X
 6
 Y
 3
-231
+135
 Width
 3
 422
 Height
 3
-146
+173
 Tool Tip
 5
 0
 Caption
 5
-33
-Receiver Heat Transfer Properties
+46
+Receiver Material and Heat Transfer Properties
 Bold
 2
 1
@@ -81,14 +81,14 @@ Width
 438
 Height
 3
-122
+83
 Tool Tip
 5
 0
 Caption
 5
-18
-Materials and Flow
+25
+Heat Transfer Fluid (HTF)
 Bold
 2
 1
@@ -105,13 +105,13 @@ X
 6
 Y
 3
-381
+318
 Width
 3
 422
 Height
 3
-167
+170
 Tool Tip
 5
 0
@@ -135,7 +135,7 @@ X
 438
 Y
 3
-291
+249
 Width
 3
 438
@@ -162,10 +162,10 @@ Name
 Optimization_Notice
 X
 3
-12
+444
 Y
 3
-147
+417
 Width
 3
 408
@@ -493,13 +493,13 @@ Name
 csp.pt.rec.material_type
 X
 3
-609
+258
 Y
 3
-93
+156
 Width
 3
-181
+130
 Height
 3
 21
@@ -531,7 +531,7 @@ X
 258
 Y
 3
-519
+456
 Width
 3
 100
@@ -593,7 +593,7 @@ X
 258
 Y
 3
-423
+360
 Width
 3
 100
@@ -655,7 +655,7 @@ X
 258
 Y
 3
-252
+180
 Width
 3
 100
@@ -717,7 +717,7 @@ X
 714
 Y
 3
-258
+213
 Width
 3
 100
@@ -779,7 +779,7 @@ X
 258
 Y
 3
-300
+228
 Width
 3
 100
@@ -841,7 +841,7 @@ X
 258
 Y
 3
-495
+432
 Width
 3
 100
@@ -903,7 +903,7 @@ X
 258
 Y
 3
-399
+336
 Width
 3
 100
@@ -991,7 +991,7 @@ X
 714
 Y
 3
-162
+117
 Width
 3
 100
@@ -1053,13 +1053,13 @@ X
 438
 Y
 3
-138
+99
 Width
 3
 438
 Height
 3
-150
+144
 Tool Tip
 5
 0
@@ -1080,10 +1080,10 @@ Name
 h_tower
 X
 3
-258
+690
 Y
 3
-195
+459
 Width
 3
 100
@@ -1145,7 +1145,7 @@ X
 258
 Y
 3
-348
+276
 Width
 3
 100
@@ -1207,7 +1207,7 @@ X
 714
 Y
 3
-234
+189
 Width
 3
 100
@@ -1269,7 +1269,7 @@ X
 714
 Y
 3
-210
+165
 Width
 3
 100
@@ -1361,7 +1361,7 @@ X
 714
 Y
 3
-381
+339
 Width
 3
 100
@@ -1423,7 +1423,7 @@ X
 714
 Y
 3
-333
+291
 Width
 3
 100
@@ -1485,7 +1485,7 @@ X
 714
 Y
 3
-357
+315
 Width
 3
 100
@@ -1547,7 +1547,7 @@ X
 714
 Y
 3
-309
+267
 Width
 3
 100
@@ -1609,7 +1609,7 @@ X
 714
 Y
 3
-405
+363
 Width
 3
 100
@@ -1671,7 +1671,7 @@ X
 258
 Y
 3
-324
+252
 Width
 3
 100
@@ -1733,7 +1733,7 @@ X
 714
 Y
 3
-186
+141
 Width
 3
 100
@@ -1795,7 +1795,7 @@ X
 258
 Y
 3
-471
+408
 Width
 3
 100
@@ -1857,7 +1857,7 @@ X
 258
 Y
 3
-447
+384
 Width
 3
 100
@@ -1919,7 +1919,7 @@ X
 258
 Y
 3
-276
+204
 Width
 3
 100
