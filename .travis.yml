@@ -46,4 +46,3 @@ branches:
   - patch
   - EPRI_Parametrics
   - Command_line_script
-  - salt_cavity_receiver
