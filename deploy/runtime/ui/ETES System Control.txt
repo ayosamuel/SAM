@@ -1791,7 +1791,7 @@ Default
 91
 equations{ 'ETES_SC_COPY_etes_bop_des_calc' } = define() {
 	return ${etes_bop_des_calc}; };
-621
+587
 on_load{"ETES System Control"} = define()
 {
 	on_change{"is_dispatch"}();
@@ -1800,16 +1800,15 @@ on_load{"ETES System Control"} = define()
 on_change{"is_dispatch"} = define() {
      en = value("is_dispatch");
      
-     enable("disp_horizon", en==1);
-     enable("disp_frequency", en==1);
-     enable("disp_max_iter", en==1);
-     enable("disp_timeout", en==1);
-     enable("disp_mip_gap", en==1);
+     enable("disp_hsu_cost", en==1);
      enable("disp_csu_cost", en==1);
-     enable("disp_rsu_cost", en==1);
      enable("disp_pen_delta_w", en==1);
-     enable("disp_wlim_max", en==1);
-     enable("disp_wlim_maxspec", en==1);
-     enable("disp_time_weighting", en==1);
-     enable("disp_inventory_incentive", en==1);
+     enable("disp_down_time_min", en==1);
+     enable("disp_up_time_min", en==1);
+     enable("disp_horizon", en==1);     
+     enable("disp_frequency", en==1);
+     enable("disp_time_weighting", en==1);     
+     enable("disp_max_iter", en==1);
+     enable("disp_mip_gap", en==1);
+     enable("disp_timeout", en==1);
 };
