@@ -1237,7 +1237,7 @@ disp_csu_cost
 1
 1
 1
-10000
+87
 disp_down_time_min
 1
 1
@@ -1261,7 +1261,7 @@ disp_hsu_cost
 1
 1
 1
-10
+0.015
 disp_max_iter
 1
 1

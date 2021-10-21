@@ -632,7 +632,7 @@ Name
 disp_csu_cost
 X
 3
-258
+237
 Y
 3
 294
@@ -653,7 +653,7 @@ Mode
 1
 Format
 3
-0
+1
 Decimals
 3
 2
@@ -694,7 +694,7 @@ Name
 disp_down_time_min
 X
 3
-258
+237
 Y
 3
 342
@@ -880,7 +880,7 @@ Name
 disp_hsu_cost
 X
 3
-258
+237
 Y
 3
 270
@@ -901,7 +901,7 @@ Mode
 1
 Format
 3
-0
+1
 Decimals
 3
 2
@@ -1066,7 +1066,7 @@ Name
 disp_pen_delta_w
 X
 3
-258
+237
 Y
 3
 318
@@ -1252,7 +1252,7 @@ Name
 disp_up_time_min
 X
 3
-258
+237
 Y
 3
 366
@@ -1314,7 +1314,7 @@ Name
 is_dispatch
 X
 3
-342
+321
 Y
 3
 243
@@ -1609,7 +1609,7 @@ disp_csu_cost
 3
 1
 Cycle startup cost penalty
-$/start
+$/MWe-cycle/start
 System Control
 0
 2
@@ -1665,7 +1665,7 @@ disp_hsu_cost
 3
 1
 Heater startup cost penalty
-$/start
+$/MWe-heater/start
 System Control
 0
 2
