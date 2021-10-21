@@ -1267,7 +1267,7 @@ disp_pen_delta_w
 1
 1
 1
-0.1
+1
 disp_time_weighting
 1
 1

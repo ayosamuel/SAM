@@ -1493,7 +1493,7 @@ disp_pen_delta_w
 3
 1
 Power generation ramping penalty
-$/ΔkWe
+$/ΔMWe
 System Control
 0
 2
@@ -1501,7 +1501,7 @@ System Control
 1
 1
 1
-0.1
+1
 Default
 disp_time_weighting
 3

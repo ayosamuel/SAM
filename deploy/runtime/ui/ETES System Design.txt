@@ -1372,7 +1372,7 @@ System Design
 -999
 Default
 
-4215
+4210
 equations{ 'etes_financial_model' } = define(){
 	if(financing() == "Single Owner"){
 		return 1;
@@ -1418,7 +1418,7 @@ equations{ '$MIMO$ ui_etes_system_design__etes_cmod' } = define()
 */
 	ret = ssc_exec(obj, 'etes_electric_resistance');
 
-	ret_d = ssc_dump(obj, 'c:/tmp/etes_system_des_mimo_ssc_auto_exec.txt');
+	//ret_d = ssc_dump(obj, 'etes_system_des_mimo_ssc_auto_exec.txt');
 
 	if(ret==0) {
 		${nameplate} = ssc_var(obj, "nameplate");
