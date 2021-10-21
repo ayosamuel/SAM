@@ -1,5 +1,5 @@
 1
-508
+511
 CT
 1
 1
@@ -1238,6 +1238,12 @@ disp_csu_cost
 1
 1
 10000
+disp_down_time_min
+1
+1
+1
+1
+2
 disp_frequency
 1
 1
@@ -1250,6 +1256,12 @@ disp_horizon
 1
 1
 48
+disp_hsu_cost
+1
+1
+1
+1
+10
 disp_max_iter
 1
 1
@@ -1280,6 +1292,12 @@ disp_timeout
 1
 1
 5
+disp_up_time_min
+1
+1
+1
+1
+2
 dispatch_data_filename
 1
 4
