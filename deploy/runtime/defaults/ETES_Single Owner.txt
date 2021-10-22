@@ -1,5 +1,5 @@
 1
-511
+512
 CT
 1
 1
@@ -1514,6 +1514,12 @@ f_q_dot_des_allowable_su
 1
 1
 1
+f_q_dot_heater_min
+1
+1
+1
+1
+0.25
 federal_tax_rate
 1
 2
