@@ -1267,7 +1267,7 @@ disp_max_iter
 1
 1
 1
-35000
+100000
 disp_mip_gap
 1
 1
