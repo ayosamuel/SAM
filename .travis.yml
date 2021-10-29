@@ -46,3 +46,4 @@ branches:
   - patch
   - EPRI_Parametrics
   - Command_line_script
+  - etes_dispatch
